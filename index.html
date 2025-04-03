@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Anointed Ones</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="x-icon" href="images/anointed/anointed ones.png">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/8843c84ed7.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <!-- Second Font(sans-serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Funnel+Display:wght@300..800&family=Karla:ital,wght@0,200..800;1,200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" aria-label="Main Navigation">
+        <!-- Icons -->
+        <span id="menu-icon" onclick="openmenu()" ondblclick="closemenu()">&#9776;</span>
+        <span onclick="closeMenu()" id="close-icon"><i class="fa-solid fa-x"></i></span>
+        <ul id="menulist">
+            <li><a href="index.html">Home <i class="fa-solid fa-house"></i></a></li>
+            <li><a href="prayer.html">Pray with Us <i class="fa-solid fa-hands-praying"></i></a></li>
+            <li onclick="donateOpen()">Donate Now <i class="fa-solid fa-hand-holding-dollar"></i></li>
+            <li><a href="#contact">Contact Us <i class="fa-solid fa-phone"></i></a></li>
+        </ul>
+    </nav>
+    <!-- PicDiv -->
+    <div class="picdiv">
+        <div class="text">
+            <span id="bigg">Welcome to Anointed Ones</span>
+            <span id="small">A place where faith grows, prayers are lifted, and hearts are connected</span>
+            <button onclick="signup()">Join us in Prayer <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+    <!-- Scripture -->
+    <div class="scripture">
+        <h2>“For where two or more gather in My Name, there am I with them.”</h2>
+        <h4>-Matthew 18:20</h4>
+    </div>
+    <!-- Mission -->
+    <div class="mission">
+        <div class="left"></div>
+        <div class="right">
+            <h2>Our Mission</h2>
+            <p>
+                Anointed Ones aim to help you grow in your spiritual journey by organizing prayer meetings
+                amongst believers and people going through similar struggles as you may be doing.
+                Come worship and pray with us and experience the presence of the Lord!
+            </p>
+        </div>
+    </div>
+    <!-- Get Involved -->
+    <div class="participate">
+        <h2>Join Us in prayer & Make a difference</h2>
+        <div class="participate-container">
+            <div class="participate-box">
+                <h3>Join our Prayer Meetings</h3>
+                <p>
+                    Come experience the power of collective prayer
+                    <a href="#schedule"><button>View Schedule <i class="fa-solid fa-calendar-days"></i></button></a>
+                </p>
+            </div>
+            <div class="participate-box">
+                <h3>Submit a Prayer Request</h3>
+                <p>
+                    Send us a message of what you're facing and let us pray for you!
+                    <button onclick="prayerOpen()">Send us a Message <i class="fa-solid fa-envelope"></i></button><!-- Opens a pryaer Request Form -->
+                </p>
+            </div>
+            <div class="participate-box">
+                <h3>Daily Devotions & Inspiration</h3>
+                <p>
+                    Grow spiritually with our daily reflections
+                    <a href="prayer.html"><button>Join our Group <i class="fa-solid fa-users"></i></button></a><!-- Links to How to Pray Page -->
+                </p>
+            </div>
+            <div class="participate-box">
+                <h3>Become a Prayer Partner</h3>
+                <p>
+                    Become commited to interceding for others
+                    <button onclick="signup()">Sign Up <i class="fa-solid fa-arrow-right"></i></button><!-- Opens a membership form -->
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- What we want for you -->
+    <div class="goal">
+        <h2>What we want for you?</h2>
+        <div class="goal-container">
+            <div class="goal-box">
+                <h3>Get closer to God</h3>
+                <p>
+                    We want you to come and strengthen or renew your bond with The Lord
+                </p>
+            </div>
+            <div class="goal-box">
+                <h3>Pray More Fervently</h3>
+                <p>
+                    We want you to be able to pray longer and impactful prayers to see the benefit of prayer in your life
+                </p>
+            </div>
+            <div class="goal-box">
+                <h3>Understand God's Word</h3>
+                <p>
+                    Our passion is to help you understand God's Word and know how to practically apply it in your own life
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- How we do that -->
+    <div class="how">
+        <h2>How we do that?</h2>
+        <div class="how-container">
+            <div class="how-box">
+                <h3>Monthly Prayer Sessions</h3>
+                <p>
+                    We organize Bible and Prayer Sessions every month in order to allow
+                    you meet more people and discuss issues concerning our spiritual lives
+                    as well as pray during this period
+                </p>
+            </div>
+            <div class="how-box">
+                <h3>Group Discussions</h3>
+                <p>
+                    During our fasting period, we organize Group Discussions to debate on issues
+                    troubling the world today and how we can practically use the Word to battle these
+                    adversities
+                </p>
+            </div>
+            <div class="how-box">
+                <h3>Online Meetings</h3>
+                <p>
+                    As our main form of communication due to our widespread reach, we use the internet to its
+                    fullest in order to organize our prayer and Bible meetings
+                </p>
+            </div>
+            <div class="how-box">
+                <h3>Help Forum</h3>
+                <p>
+                    In our group chat, we discuss topics to help you grow your faith in Christ such as love,
+                    peace, honesty and many more to let you understand the Word in a better light
+                </p>
+            </div>
+        </div>
+        <button onclick="signup()">Fill a form and Get Started <i class="fa-solid fa-arrow-right"></i></button><!-- Opens a membership form -->
+    </div>
+    <!-- OutReach -->
+    <div class="outreach">
+        <div class="left">
+            <img src="images/anointed/5.webp">
+        </div>
+        <div class="right">
+            <h1>Prayer with Intensity <span>everytime we meet</span></h1>
+            <p>
+                Anointed Ones Prayer group is an interdenominational movement of prayer, mission and justice;
+                a non-stop prayer meeting that has continued for close to two years now, in over five countries
+            </p>
+            <div class="right-container">
+                <div class="right-box">
+                    <span>8</span>Nations praying
+                </div>
+                <div class="right-box">
+                    <span>10K+</span>prayers prayed
+                </div>
+                <div class="right-box">
+                    <span>3</span>Continents worldwide
+                </div>
+            </div>
+            <button onclick="signup()">Join Now <i class="fa-solid fa-arrow-right"></i><!-- Opens a Sign Up form --></button>
+            <a href="#schedule"><button>View Calendar <i class="fa-solid fa-calendar-days"></i><!-- Links to Calendar/ Meeting Schedule --></button></a>
+        </div>
+    </div>
+    <!-- Countries -->
+    <div class="countries">
+        <h2>Our Worldwide Reach</h2>
+        <p>
+            Our impact and prayers have reached so many around the world and in 3 different continents making a difference
+        </p>
+        <div class="country-container">
+            <div class="country-box">
+                <img src="images/anointed/uk.webp">
+                <div class="text">
+                    <h1>United Kingdom</h1>
+                </div>
+            </div>
+            <div class="country-box">
+                <img src="images/anointed/ghanaflag.jpg">
+                <div class="text">
+                    <h1>Ghana</h1>
+                </div>
+            </div>
+            <div class="country-box">
+                <img src="images/anointed/usa.webp">
+                <div class="text">
+                    <h1>United States</h1>
+                </div>
+            </div>
+            <div class="country-box">
+                <img src="images/anointed/netherlands.jpg">
+                <div class="text">
+                    <h1>Netherlands</h1>
+                </div>
+            </div>
+            <div class="country-box">
+                <img src="images/anointed/nigeria.jpg">
+                <div class="text">
+                    <h1>Nigeria</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Logo -->
+    <div class="logo">
+        <img src="images/anointed/anointed_ones-png.png">
+    </div>
+    <!-- Event Schedule -->
+    <div class="schedule" id="schedule">
+        <div class="left"></div>
+        <div class="right">
+            <div class="text">
+                <h2>Event Schedule</h2>
+                <div class="list">
+                    <div class="list-row">
+                        <li>EVENT</li>
+                        <li>TIME</li>
+                        <li>MODE</li>
+                    </div>
+                    <div class="list-row">
+                        <li>Monthly Prayer Meetings</li>
+                        <li>2nd week every month</li>
+                        <li>Online {Zoom / Google Meets}</li>
+                    </div>
+                    <div class="list-row">
+                        <li>Monthly Prayer Meetings</li>
+                        <li>2nd week every month</li>
+                        <li>Online {Zoom / Google Meets}</li>
+                    </div>
+                    <div class="list-row">
+                        <li>Monthly Prayer Meetings</li>
+                        <li>2nd week every month</li>
+                        <li>Online {Zoom / Google Meets}</li>
+                    </div>
+                    <div class="list-row">
+                        <li>Monthly Prayer Meetings</li>
+                        <li>2nd week every month</li>
+                        <li>Online {Zoom / Google Meets}</li>
+                    </div>
+                </div>
+                <button onclick="signup()">Join Us Now <i class="fa-solid fa-calendar-days"></i></button><!-- Opens Sign up form -->
+            </div>
+        </div>
+    </div>
+    <!-- FAQ -->
+    <div class="faq" id="faq">
+        <div class="faq-container">
+            <div class="faq-box">
+                <h1>FAQ</h1>
+                <h3>All your questions answered in one place</h3>
+                <p>
+                    Learn more about our values and our story as a church by visiting the about us page.
+                    <a href=""><button>ABOUT US</button></a>
+                </p>
+            </div>
+            <div class="faq-box">
+                <div class="faq-question">
+                    <div class="question" onclick= 'function showAnswer() {const answerHTML = document.queryselector(".answer");
+                     answerHTML = innerHTML};
+                    showAnswer();'> What are your gatherings like <i class="fa-solid fa-caret-down"></i></div>
+                    <div class="answer" id="answer">
+                        First, we must understand church is not a building, a Sunday school class, or
+                        a service time. According to scripture, a church gathering is a group of people
+                        coming together in Christ and the people are the church. Jesus shows us in Matthew
+                        18 that a gathering can be as little as two people together.
+                    </div>
+                </div>
+                <div class="faq-question">
+                    <div class="question" onclick="showAnswer()">Are online prayer meetings effective? <i class="fa-solid fa-caret-down"></i></div>
+                    <div class="answer" id="answer2">
+                        First, we must understand church is not a building, a Sunday school class, or
+                        a service time. According to scripture, a church gathering is a group of people
+                        coming together in Christ and the people are the church. Jesus shows us in Matthew
+                        18 that a gathering can be as little as two people together.
+                    </div>
+                </div>
+                <div class="faq-question">
+                    <div class="question" onclick="showAnswer()">How long have you been together as a group? <i class="fa-solid fa-caret-down"></i></div>
+                    <div class="answer" id="answer3">
+                        First, we must understand church is not a building, a Sunday school class, or
+                        a service time. According to scripture, a church gathering is a group of people
+                        coming together in Christ and the people are the church. Jesus shows us in Matthew
+                        18 that a gathering can be as little as two people together.
+                    </div>
+                </div>
+                <div class="faq-question">
+                    <div class="question" onclick="showAnswer()">Can I invite people to join <i class="fa-solid fa-caret-down"></i></div>
+                    <div class="answer" id="answer4">
+                        First, we must understand church is not a building, a Sunday school class, or
+                        a service time. According to scripture, a church gathering is a group of people
+                        coming together in Christ and the people are the church. Jesus shows us in Matthew
+                        18 that a gathering can be as little as two people together.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bible Plan & Suggested Prayers -->
+    <div class="bible-plan">
+        <div class="left">
+            <div class="text">
+                <div class="left-container">
+                    <h2>Learn how to Pray?</h2>
+                    <div class="left-box">
+                        <span>1</span> <h3>Connect and Prepare</h3>
+                        <p>
+                            Find a quiet place, clear your mind, and focus on God. You can start by
+                            expressing gratitude, acknowledging His presence, or taking a deep breath
+                            to center yourself
+                        </p>
+                    </div>
+                    <div class="left-box">
+                        <span>2</span> <h3>Speak from the heart</h3>
+                        <p>
+                            Talk to God honestly about your thoughts, feelings, and needs. This can
+                            include thanking Him, asking for guidance, seeking forgiveness, or praying for others
+                        </p>
+                    </div>
+                    <div class="left-box">
+                        <span>3</span> <h3>Listen and Reflect</h3>
+                        <p>
+                            After speaking, take a moment to be silent and open your heart to any insights, peace,
+                            or direction. You can also read scripture or meditate on a meaningful verse
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <a href="prayer.html"><button>Learn how to Pray <i class="fa-solid fa-hands-praying"></i></button></a><!-- Links to prayer page -->
+        </div>
+        <div class="right"></div>
+    </div>
+    <div class="suggested">
+        <div class="left"></div>
+        <div class="right">
+            <div class="right-container">
+                <div class="text">
+                    <h2>Suggested Prayers</h2>
+                    <h3>For Love;</h3>
+                    <div class="right-box">
+                        Dear God,
+                        Fill my heart with love and kindness.
+                        Help me to give and receive love freely, with a heart full of gratitude and joy.
+                        Guide me toward a love that is pure and true.Amen.
+                    </div>
+                    <h3>For Peace;</h3>
+                    <div class="right-box">
+                        Heavenly Father,
+                        Bring peace to our hearts, our homes, and our world.
+                        Let love and understanding replace fear and division. May Your
+                        light guide us toward unity and harmony.
+                        Amen.
+                    </div>
+                    <h3>For Anxiety;</h3>
+                    <div class="right-box">
+                        Heavenly Father,
+                        When fear overwhelms me, remind me that You are near.
+                        Give me courage to face each moment with faith.
+                        Let Your peace replace my worries.
+                        Amen.
+                    </div>
+                </div>
+            </div>
+            <button onclick="prayerOpen()">Send us a Message <i class="fa-solid fa-envelope"></i></button><!-- Links to prayer page -->
+        </div>
+    </div>
+    <!-- Testimonials -->
+    <div class="testimonials">
+        <h2>Testimonials</h2>
+        <p>
+            See what our members think of us as a prayer group, hopefully you'll be more excited to join
+        </p>
+        <!-- Quotes slideshow -->
+        <div class="slideshow">
+            <div class="mySlides" name="Slides">
+                <q>My experience with Anointed Ones was has been one of unmatched prayer filled experiences, they make you anticipate the next meeting everytime they meet</q>
+                <p class="author">-Kate Arthur</p>
+            </div>
+            <div class="mySlides" name="Slides">
+                <q>Every prayer session with Anointed Ones renourishes your spirit and gives you the drive and energy you need to take on life's battle</q>
+                <p class="author">-Kingsley Abbey</p>
+            </div>
+            <div class="mySlides" name="Slides">
+                <q>The most I've ever prayed is with them and they leave you wanting more anytime there's a prayer meeting. Personally I wouldn't want to leave them for any other prayer group</q>
+                <p class="author">-Sarah Dickson</p>
+            </div>
+            <span onclick="plusSlides(-1)" class="prev">&#10094</span>
+            <span onclick="plusSlides(1)" class="next">&#10095</span>
+        </div>
+        <div class="dot-cont">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+    <!-- Contact -->
+    <div class="contact" id="contact">
+        <div class="contact-container">
+            <div class="contact-box">
+                <img src="images/iconpics/phne.jpg" class="icon">
+                <h3>+447440616710</h3>
+            </div>
+            <div class="contact-box">
+                <img src="images/iconpics/igoriginal.png" class="icon">
+                <h3>annointedones1</h3>
+            </div>
+            <div class="contact-box">
+                <img src="images/iconpics/logo-gmail.png" class="icon">
+                <h3>anointedonesworship@gmail.com</h3>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter -->
+    <div class="newsletter">
+        <h2>Newsletter</h2>
+        <p>Join our newsletter to be the first to hear of our promos and other events!</p>
+        <input type="email" name="" placeholder="someone@example.com" id="">
+        <button class="news" type="submit">Subscribe</button>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <li><a href="prayer.html">How to Pray</a></li><!-- Links to prayer page -->
+                <li><a href="prayer.html">Bible Plan</a></li><!-- Links to prayer page -->
+                <li onclick="signup()">Help Others</li><!-- Opens Sign up form -->
+                <li onclick="signup()">Join Anointed Ones</li><!-- Opens Sign up form -->
+            </div>
+            <div class="footer-box">
+                <img src="images/anointed/anointed_ones-png.png">                
+            </div>
+            <div class="footer-box">
+                <h3>Reach us On;</h3>
+                <li><i class="fa-solid fa-phone"></i> +447440616710</li>
+                <li><i class="fa-brands fa-facebook"></i> anointedones1</li>
+                <li><i class="fa-solid fa-envelope"></i> anointedonesworship@gmail.com</li>
+            </div>
+        </div>
+    </footer>
+    <!-- Modal For forms -->
+    <div class="signup" id="signup">
+        <form action="" class="sign-up" id="sign-up">
+            <span class="close-icon" id="close-sign" onclick="closesign()"><i class="fa-solid fa-xmark"></i></span>
+            <h2>Sign Up</h2>
+            <label for="Name">Name <i class="fa-solid fa-user"></i></label>
+            <input type="text" name="name" placeholder="Type your name here" id="" autocomplete="name">
+            <label for="email">Email <i class="fa-solid fa-envelope"></i></label>
+            <input type="email" name="email" placeholder="someone@example.com" id="" autocomplete="email">
+            <label for="email">Password <i class="fa-solid fa-user-lock"></i></label>
+            <input type="password" name="password" placeholder="Type a Password (a-z , 0-9)" id="" autocomplete="current-password">
+            <button type="submit">Sign Up</button>
+            <button type="reset">Reset Information</button>
+        </form>
+    </div>
+    <!-- Prayer Request Form -->
+    <div class="prayerrequest" id="prayerrequest">
+        <form action="" class="prayer-request" id="prayer-request">
+            <h2>Prayer Request Form</h2>
+            <span class="close-icon" id="close-sign" onclick="prayerClose()"><i class="fa-solid fa-xmark"></i></span>
+            <label for="">Name;</label>
+            <input type="text" name="name" placeholder="Type your name here" id="" autocomplete="name">
+            <label for="">Prayer Topic</label>
+            <input type="text" name="" placeholder="What's your prayer related to?" id="">
+            <label for="">Prayer Request</label>
+            <input type="text" name="" id="" placeholder="Type your prayer request here">
+        </form>
+    </div>
+    <!-- Donation Form -->
+    <div class="donate" id="donate">
+        <form action="" class="donate-form" id="donate-form">
+            <h2>Donate To Serve God's Cause</h2>            
+            <span class="close-icon" id="close-sign" onclick="donateClose()"><i class="fa-solid fa-xmark"></i></span>
+            <label for="">Name;</label>            
+            <input type="text" name="name" placeholder="Type your name here" id="" autocomplete="name">
+            <label for="">Transfer Reference;</label>
+            <input type="text" name="" placeholder="Type a reference here" id="">
+            <label for="">Donation Amount;</label>
+            <input type="number" name="" placeholder="Donate here" id="">
+        </form>
+    </div>
+    <!-- 
+        Countries we've reached ✅
+        Ghana,UK,USA,Nigeria,Netherlands,South Africac
+    -->
+    <!-- 
+        To Talk about;
+        - Testimonials✅
+        - Bible plan in the prayer page
+        - Suggested Prayers ✅
+        - Goal for the guest as a prayer group aside their mission✅
+
+        To add;
+        - Membership form
+        - Event Calendar✅
+        - FAQ Section✅
+        - Benefits of Prayer
+        - Sign Up form
+        - Prayer Request form
+    -->
+
+
+
+    <!-- Scripting(script.js) -->
+    <script>
+
+        // For quotes slideshow
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            let i;
+            let slides = document.getElementsByName("Slides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+                }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+
+        // Open Sign Up Form
+        let modal = document.getElementById("signup");
+        let signForm = document.getElementById("sign-up");
+        let closeSign = document.getElementById("close-sign");
+        function signup(){
+            modal.style.width = "100%";
+            signForm.style.display = "block";
+        };
+        function closesign(){
+            modal.style.width = "0%";
+            signForm.style.display = "none";
+        };
+
+        //Open Prayer Request Form
+        let secondModal = document.getElementById("prayerrequest");
+        let prayerForm = document.getElementById("prayer-request");
+        function prayerOpen(){
+            secondModal.style.width = "100%";
+            prayerForm.style.display = "block";
+        };
+        function prayerClose(){
+            secondModal.style.width = "0%";
+            prayerForm.style.display = "none";
+        };
+
+        //Donation Form
+        let thirdModal = document.getElementById("donate");
+        let donateForm = document.getElementById("donate-form");
+        function donateOpen(){
+            thirdModal.style.width = "100%";
+            donateForm.style.display = "block";
+        };
+        function donateCLose(){
+            thirdModal.style.width = "0%";
+            donateForm.style.display = "none";
+        };
+
+        //Navigation on small device(Mobile <= 500px)
+    </script>
+</body>
+</html>
